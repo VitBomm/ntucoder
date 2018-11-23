@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+void solved()
+{
+    string s;
+    //cin.ignore();
+    getline(cin,s);
+    bool number = false;
+    int countt1 = 0;
+    for(int i = 0 ; i <s.size();i++)
+    {
+        if(s[i] == ' ')
+        {
+            number = false;
+        }
+        else
+        {
+            if(number == false)
+                {
+                    number = true;
+                    countt1++;
+                }
+        }
+    }
+    cout<<countt1;
+}
+int main()
+{
+    solved();
+    return 0;
+}
+    
